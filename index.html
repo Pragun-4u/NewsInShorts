@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsInshorts | Pragun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav flex container">
+            <a href="" onclick="reload()">
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/21/21601.png" alt="">
+            <div class="nav-links">
+            </a>
+
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="World" onclick="clickQuery('World')">World</li>
+                    <li class="hover-link nav-item" id="Education" onclick="clickQuery('Education')">Education</li>
+                    <li class="hover-link nav-item" id="Movies" onclick="clickQuery('Movies')">Movies</li>
+                    <li class="hover-link nav-item" id="Football" onclick="clickQuery('Football')">Football</li>
+                    <li class="hover-link nav-item" id="Market" onclick="clickQuery('Market')">Market</li>
+                    <li class="hover-link nav-item" id="Pop Culture" onclick="clickQuery('Pop Culture')">Pop Culture</li>
+                    
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="input-text" placeholder="Search for News">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news Image" id="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">News Title</h3>
+                <h5 id="news-source" class="news-source">News Source</h5>
+                <h5 id="news-date" class="news-date">News Source</h5>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                    sequi quas quam veniam rem distinctio, alias tenetur explicabo accusamus laudantium quidem labore
+                    quo dolorum.</p>
+            </div>
+        </div>
+
+    </template>
+    <script src="news.js"></script>
+</body>
+<footer>
+    <div id="foot">
+        <h5>Made by <span> Pragun</span></h5>
+        <h5></h5>
+    </div>
+</footer>
+
+</html>
